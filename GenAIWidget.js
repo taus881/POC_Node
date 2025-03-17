@@ -90,7 +90,7 @@
           method: "POST",
           headers: {
             "Content-Type": "application/json",
-            "Authorization": "Bearer " + apiKey
+            "api-key": apiKey
           },
           body: JSON.stringify({
             "model": "gpt-35-turbo-instruct",
