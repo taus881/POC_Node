@@ -86,27 +86,19 @@
         const generatedText = this.shadowRoot.getElementById("generated-text");
         generatedText.value = "Finding result...";
         const prompt = promptInput.value;
-        const response = await fetch("https://genaiapimna.jnj.com/openai-completion/openai/deployments/gpt-35-turbo-instruct/completions?api-version=2023-03-15-preview", {
+        const response = await fetch("http://AZRHQRNVAL0002.jnj.com:3050/api/data", {
           method: "POST",
           headers: {
-            "Content-Type": "application/json",
-            "api-key": apiKey
+            "Content-Type": "application/json"
           },
           body: JSON.stringify({
-            "model": "gpt-35-turbo-instruct",
             "prompt": prompt,
-            "max_tokens": parseInt(max_tokens),
-            "n": 1,
-            "temperature": 0.5,
-            "top_p": 1,
-            "frequency_penalty": 0,
-            "presence_penalty": 0,
-            "max_tokens": 60,
-            "stop": null
+            "destination" : apiKey,
+            "length" : max_tokens
           })
         });
 
-        if (response.status === 200) {
+        if (response.ok) {
           const {
             choices
           } = await response.json();
