@@ -86,7 +86,7 @@
         const generatedText = this.shadowRoot.getElementById("generated-text");
         generatedText.value = "Finding result...";
         const prompt = promptInput.value;
-        const response = await fetch("http://AZRHQRNVAL0002.jnj.com:3050/api/data", {
+        const response = await fetch("https://AZRHQRNVAL0002.jnj.com:3050/api/data", {
           method: "POST",
           headers: {
             "Content-Type": "application/json"
