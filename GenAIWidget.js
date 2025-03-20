@@ -22,7 +22,7 @@
   #prompt-input {
     padding: 10px;
     font-size: 16px;
-    border: 1px solid #ccc;
+    border: 1px solid #3179be;
     border-radius: 5px;
     width: 70%;
   }
@@ -31,7 +31,7 @@
   #generate-button {
     padding: 10px;
     font-size: 16px;
-    background-color: #3cb6a9;
+    background-color: #3179be;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -43,15 +43,18 @@
   #generated-text {
     padding: 10px;
     font-size: 16px;
-    border: 1px solid #ccc;
+    border: 1px solid #3179be;
     border-radius: 5px;
   width:96%;
   }
       </style>
      <div>
   <center>
-  <img src="https://1000logos.net/wp-content/uploads/2023/02/ChatGPT-Emblem.png" width="200"/>
-  <h1>GenAI</h1></center>
+  <div>
+    <img src="https://genaimarketplace.jnj.com/static/media/jnjLogo.3632e0b70ba7585e5c38af11285cfbaf.svg" width="100" height="80"/>
+    <img src="https://genaimarketplace.jnj.com/static/media/genAiLogo.c1404741ad8a325238f390013e2cef30.svg" width="100" height="80"/>
+ </div>
+ </center>
     <div class="input-container">
       <input type="text" id="prompt-input" placeholder="Enter a prompt">
       <button id="generate-button">Generate Text</button>
