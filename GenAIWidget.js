@@ -56,8 +56,8 @@
  </div>
  </center>
     <div class="input-container">
-      <input type="text" id="prompt-input" placeholder="Enter a prompt">
-      <button id="generate-button">Generate Text</button>
+      <input type="text" id="prompt-input" placeholder="Ask a question">
+      <button id="generate-button">Go!!</button>
     </div>
     <textarea id="generated-text" rows="10" cols="50" readonly></ textarea>
   </div>
